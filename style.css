@@ -1,0 +1,291 @@
+body {
+	font-family: 'Roboto';
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	max-width: 1920px;
+	margin: 0;
+}
+
+	.header{
+			margin: 0 auto;
+			width: 100%;
+			background: gray;
+			display: flex;
+			justify-content: space-around;
+		}
+		.logo{
+			margin: 10px 20px;
+		}
+		.logo a{
+			text-decoration: none;
+		}
+		.logo p{
+			margin: 0px;
+			color: white;
+		}
+		.nav ul{
+			display: inline-flex;
+			justify-content: space-between;
+			text-align: left;
+			margin: 45px;
+		}
+		.nav li{
+			margin: 20px;
+			width: auto;
+			list-style: none;
+		}
+		.nav li a:hover{
+			color: red;
+		}
+		.nav li a{
+			text-decoration: none;
+			color: white;
+			font-size: 25px;
+		}
+		.main{
+			margin: 80px 0px 0px 0px;
+			display: flex;
+			justify-content: space-around;
+			padding-bottom: 75px;
+		}
+		.main img{
+			width: 40%;
+			height: auto;
+			border: 6px solid gray;
+		}
+		.main h3{
+			margin: 130px 0px 0px 0px;
+			font-size: 25px;
+		}
+		.news{
+			display: inline-block;
+			margin: 50px auto;
+			text-align: center;
+			padding-bottom: 25px;
+			background-color: gray;
+		}
+		.li_news1{
+			display: inline-flex;
+			justify-content: space-between;
+			width: 80%;
+			height: 300px;
+			margin-top: 30px; 
+			padding: 20px;
+			background-color: white;
+		}
+		.li_news1 img{
+			width: 400px;
+			height: auto;
+		}
+		.li_news1 h3{
+			margin: 120px auto;
+			font-size: 30px
+
+		}
+		.slide {
+			margin: 100px 0px;
+	        width: 800px;
+	        height: 300px;
+	        border: 1px solid black;
+	        position: relative;
+	        text-align: center;
+	    }
+		.slide  input {
+	        display: none;
+	    }
+	    .slide  input + label {
+	        display: inline-block;
+	        width: 10px;
+	        height: 10px;
+	        border-radius: 8px;
+	        background: white;
+	        border: 2px solid gray;
+
+	        cursor: pointer;
+
+	        z-index: 100;
+	        position: relative;
+
+	        margin-right: 4px;
+	        top: 90%;
+
+	        transition: background 0.4s ease-out 0s;
+	    }
+	    .slide  input + label:hover {
+	        background: black;
+	    }
+	    .slide  input:checked + label {
+	        background: black;
+	    }
+	    .slide  div {
+	        position: absolute;
+	        top: 0px;
+	        left: 0px;
+	        right: 0px;
+	        bottom: 0px;
+	        z-index: 0;
+	    }
+	    .slide div {
+	    	display: inline-flex;
+	        visibility: hidden;
+	        opacity: 0;
+	        transition: opacity 0.4s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+	    }
+		
+	    .slide  input:checked + label + div {
+	        visibility: visible;
+	        opacity: 1;
+	        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+	    }
+	    .slide ul {
+	    	position: absolute;
+	    	left: 20px;
+	    	right: 20px;
+	    	column-count: 2;
+	    	font-size:30px;
+	    	text-align: left;
+	    }
+	    .tops{
+	    	width: auto;
+	    	display: inline-flex;
+	    	margin-bottom: 150px;
+	    	padding-bottom: 50px;
+	    }
+	    #film_types_menu img{
+	    	margin: 5px;
+	    	width: 30px;
+	    	height: 20px;
+	    }
+	    #film_types_menu ul{
+	        display: none;
+	        position: absolute;
+	        top: 100%;
+      	}
+	    #film_types_menu li:hover ul { display: block; }
+	    #film_types_menu, #film_types_menu ul{
+	    	margin: 0;
+	        padding: 0;
+	        list-style-type: none;
+	    }
+	    #film_types_menu {
+	      	margin: 100px 0px 0px 100px;
+	        height: 30px;
+	        padding-left: 25px;
+	        min-width: 470px;
+	    }
+	    #film_types_menu li {
+	        float: left;
+	        position: relative;
+	        height: 100%;
+	    }
+	    #film_types_menu li a {
+	      	font-size: 25px;
+	        display: inline-flex;
+	        padding: 6px;
+	        width: 100px;
+	        color: black;
+	        text-decoration: none;
+	        text-align: center;
+	    }
+	    #film_types_menu ul li { float: none; }
+	    #about{
+	      	font-size: 25px;
+	      	text-align: center;
+	      	margin-bottom: 600px;
+
+	    }
+	    #living{
+	    	display: flex;
+	    	justify-content: center;
+	    }
+	    #living img{
+	    	margin:200px 200px 20px 200px; 
+	    	width: 600px;
+	    }
+	    #dark1 {
+        	background: rgba(102, 102, 102, 0.5);
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        	top: 4500;
+        	left: 0;
+        	display: none;
+      	}
+      	#dark1:target{display: block;}
+	    #dark2 {
+        	background: rgba(102, 102, 102, 0.5);
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        	top: 4500;
+        	left: 0;
+        	display: none;
+      	}
+	    #galary{
+	    	position: absolute;
+	    	top: 4500;
+  			right: 0;
+  			bottom: 0;
+  			left: 0;
+ 			margin: auto;
+	    }
+	    #dark2:target{display: block;}
+	    .flex-galary img{
+	    	margin: 10px 0px;
+	    }
+	    .flex-galary{
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	justify-content: space-around;
+	    	align-items: stretch;
+	    }
+	    .close {
+        	display: inline-block;
+        	border: 1px solid black;
+        	color: black;
+        	padding: 0 12px;
+        	margin: 10px;
+        	text-decoration: none;
+        	background: gray;
+        	font-size: 14pt;
+        	cursor:pointer;
+     	}
+      	.close:hover {background: white;} 
+
+      	.form input{
+      		width: 300px;
+      		font-size: 13px;
+			padding: 6px 0 4px 10px;
+			border: 1px solid #cecece;
+			background: #F6F6f6;
+			border-radius: 8px;
+      	}
+      	.form button {
+			cursor: pointer;
+			border: 1px solid #cecece;
+			background: #f6f6f6;
+			box-shadow: inset 0px 20px 20px #ffffff;
+			border-radius: 8px;
+			padding: 8px 14px;
+			width: 100px;
+		}
+		.form button:hover {
+			box-shadow: inset 0px -20px 20px #ffffff;
+		}
+		.form button:active {
+			margin-top: 1px;
+			margin-bottom: -1px;
+			border-radius: 8px;
+			zoom: 1;
+		}
+		.footer{
+			padding-top: 20px;
+			text-align: center;
+			height: 50px;
+			background-color: black;
+			color: white;
+			font-size: 20px;
+		}
